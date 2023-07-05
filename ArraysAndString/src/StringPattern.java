@@ -1,0 +1,17 @@
+public class StringPattern {
+    static void patSearch(String txt,String pat)
+    {
+        int pos = txt.indexOf(pat);
+        while (pos>=0){
+            System.out.print(pos+" ");
+            pos = txt.indexOf(pat,pos+1);
+        }
+    }
+
+    public static void main(String[] args) {
+        String txt = "geeks for geeks";
+        String pat = "geeks";
+
+        patSearch(txt,pat);
+    }
+}
